@@ -1,0 +1,20 @@
+
+public class maxAnd {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+int ar[] = {3,5,8,10,12};
+int n = ar.length;
+int low =0,high = n-1;
+int max = 0;
+while(low<high) {
+	int a = ar[low]&ar[high];
+	if(a>max) {
+		max = a;
+		high--;}
+	else
+		low++;
+}System.out.print(max);
+	}
+
+}
